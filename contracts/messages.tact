@@ -13,3 +13,11 @@ message InternalComplete {
 message NewTodoResponse {
     seqno: Int as uint256;
 }
+message InternalAdd {
+    amount: Int as coins;
+    origin: Address;
+}
+message Transfer {
+    amount: Int as coins;
+    to: Address;
+}
